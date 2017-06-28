@@ -22,7 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Push.setListener(new MyPushListener());
 <<<<<<< HEAD
+<<<<<<< HEAD
         UUID installId = MobileCenter.getInstallId();
+=======
+>>>>>>> 0b88b39d846ed5c764aa196f107cdb40e958a34c
 =======
 >>>>>>> 0b88b39d846ed5c764aa196f107cdb40e958a34c
         MobileCenter.start(getApplication(), "60795832-9269-49de-90ba-421a56e46ea3",
