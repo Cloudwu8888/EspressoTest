@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "296781171929",
-    "firebase_url": "https://fir-demo-b1e50.firebaseio.com",
-    "project_id": "fir-demo-b1e50",
-    "storage_bucket": "fir-demo-b1e50.appspot.com"
+    "project_number": "825721373309",
+    "firebase_url": "https://espressotestdemo-eb3fd.firebaseio.com",
+    "project_id": "espressotestdemo-eb3fd",
+    "storage_bucket": "espressotestdemo-eb3fd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:296781171929:android:9ac431dc09e15baa",
+        "mobilesdk_app_id": "1:825721373309:android:9ac431dc09e15baa",
         "android_client_info": {
           "package_name": "sample.test_espresso.com.myapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "296781171929-c02f2v5rh13fa79n43qqhd7aedfvn4mk.apps.googleusercontent.com",
+          "client_id": "825721373309-7k2kbiu4758ds560iu7cfje3oeb507hp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "sample.test_espresso.com.myapplication",
-            "certificate_hash": "c19ec1c62fef8c25e8cf1163bd7eb14489a9ea61"
+            "certificate_hash": "a60fca3a87cb1bfc4c7aab56b8e908d81eac9184"
           }
         },
         {
-          "client_id": "296781171929-tmtib4uarvbfc248ivpub7rvuh70g2hm.apps.googleusercontent.com",
+          "client_id": "825721373309-c0dnvuobc2cl65bv6pehgjgu1q35id29.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAScB5qojoqIyfknZ1jVHEuuhxdrAOXIFo"
+          "current_key": "AIzaSyC5OZrTyvBRyASrR16hiMRGYmlDKXJ1iOQ"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "296781171929-tmtib4uarvbfc248ivpub7rvuh70g2hm.apps.googleusercontent.com",
+              "client_id": "825721373309-c0dnvuobc2cl65bv6pehgjgu1q35id29.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
