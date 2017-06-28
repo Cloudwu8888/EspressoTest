@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         UUID installId = MobileCenter.getInstallId();
         MobileCenter.start(getApplication(), "60795832-9269-49de-90ba-421a56e46ea3",
                 Analytics.class, Crashes.class, Push.class);
+        Analytics.trackEvent("Change Text");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.inputField);
