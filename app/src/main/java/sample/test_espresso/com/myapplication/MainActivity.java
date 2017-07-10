@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Push.setListener(new MyPushListener());
         UUID installId = MobileCenter.getInstallId();
-        MobileCenter.start(getApplication(), "60795832-9269-49de-90ba-421a56e46ea3",
+        MobileCenter.start(getApplication(), "d78a11b3-2c2b-45de-8c84-c847ad18cf8b",
                 Analytics.class, Crashes.class, Push.class);
         Analytics.trackEvent("Change Text");
         super.onCreate(savedInstanceState);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.changeText:
-                editText.setText("Lalala");
+                editText.setText("Chang Test Click");
                 break;
             case R.id.switchActivity:
                 Intent intent = new Intent(this, SecondActivity.class);
