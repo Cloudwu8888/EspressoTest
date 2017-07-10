@@ -43,7 +43,7 @@ public class MainActivityEspressoTest {
 
     @Test
     public void changeText_newActivity() {
-        reportHelper.label("myTestStepLabel");
+        reportHelper.label("Lalala");
         // Type text and then press the button.
         onView(withId(R.id.inputField)).perform(typeText("NewText"),
                 closeSoftKeyboard());
