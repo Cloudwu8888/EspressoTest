@@ -11,6 +11,7 @@ import com.microsoft.azure.mobile.MobileCenter;
 import com.microsoft.azure.mobile.analytics.Analytics;
 import com.microsoft.azure.mobile.crashes.Crashes;
 import com.microsoft.azure.mobile.push.Push;
+import android.util.Log;
 
 
 import java.util.UUID;
@@ -21,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Push.setListener(new MyPushListener());
-        UUID installId = MobileCenter.getInstallId();
-        MobileCenter.start(getApplication(), "d78a11b3-2c2b-45de-8c84-c847ad18cf8b",
+        Log.e("installID",""+MobileCenter.getInstallId().get());
+        MobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+        MobileCenter.start(getApplication(), "d636b457-b9f7-487f-93aa-2e66fdc72eed",
                 Analytics.class, Crashes.class, Push.class);
         Analytics.trackEvent("Change Text");
         super.onCreate(savedInstanceState);
