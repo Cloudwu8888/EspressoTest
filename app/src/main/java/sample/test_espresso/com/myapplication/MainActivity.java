@@ -10,6 +10,7 @@ import android.widget.EditText;
 import com.microsoft.azure.mobile.MobileCenter;
 import com.microsoft.azure.mobile.analytics.Analytics;
 import com.microsoft.azure.mobile.crashes.Crashes;
+import com.microsoft.azure.mobile.distribute.Distribute;
 import com.microsoft.azure.mobile.push.Push;
 import android.util.Log;
 
@@ -22,12 +23,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Push.setListener(new MyPushListener());
-        Log.e("installID",""+MobileCenter.getInstallId().get());
+        Distribute.setListener(new MyDistributeListener());
+
         MobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
         MobileCenter.start(getApplication(), "d636b457-b9f7-487f-93aa-2e66fdc72eed",
-                Analytics.class, Crashes.class, Push.class);
+                Analytics.class, Crashes.class, Push.class, Distribute.class);
         Analytics.trackEvent("Change Text");
         super.onCreate(savedInstanceState);
+        //Log.e("installID","" + MobileCenter.getInstallId().get());
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.inputField);
     }
