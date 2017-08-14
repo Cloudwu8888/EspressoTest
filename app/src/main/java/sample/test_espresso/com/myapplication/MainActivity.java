@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         Push.setListener(new MyPushListener());
         Distribute.setListener(new MyDistributeListener());
 
-        MobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
-        MobileCenter.start(getApplication(), "d636b457-b9f7-487f-93aa-2e66fdc72eed",
+       // MobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+        MobileCenter.start(getApplication(), "f6b74362-a6fd-4eda-952d-6f50da3086b3",
                 Analytics.class, Crashes.class, Push.class, Distribute.class);
         Analytics.trackEvent("Change Text");
         super.onCreate(savedInstanceState);
