@@ -1,4 +1,15 @@
+
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">JavaAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="crash_sent_succeeded">crash_sent_succeeded</string>
+    <string name="crash_before_sending">crash_before_sending</string>
     <string name="push_toast">Push clicked with data=%1s</string>
+    <string name="crash_confirmation_dialog_title">crash_confirmation_dialog_title</string>
+    <string name="crash_confirmation_dialog_message">crash_confirmation_dialog_message</string>
+    <string name="crash_confirmation_dialog_send_button">crash_confirmation_dialog_send_button</string>
+    <string name="crash_confirmation_dialog_not_send_button">crash_confirmation_dialog_not_send_button</string>
+    <string name="crash_confirmation_dialog_always_send_button">crash_confirmation_dialog_always_send_button</string>
+    <string name="crash_sent_failed">crash_sent_failed</string>
 </resources>
